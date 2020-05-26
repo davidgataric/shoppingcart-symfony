@@ -15,6 +15,7 @@
             <th>#</th>
             <th>Product</th>
             <th>Amount</th>
+            <th>Detail</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -26,6 +27,9 @@
                 <td class="text-center"><?php echo $item[0] ?></td>
                 <td class="text-center"><?php echo $item[2] ?></td>
                 <td class="text-center"><?php echo $item[1] ?></td>
+                <td class="text-center">
+                    <a href="detail?id=<?php echo $item[0] ?>" class="button primary">Detail</a>
+                </td>
                 <td class="text-center">
                     <a href="edit?id=<?php echo $item[0] ?>" class="button primary">Edit</a>
                 </td>
